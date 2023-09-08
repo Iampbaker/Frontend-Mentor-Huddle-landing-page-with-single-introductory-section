@@ -1,0 +1,148 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.logo {
+    width: 180px; 
+    padding: 50px 0 50px 50px; 
+}
+
+.main {
+    padding: 2rem 8rem; 
+    margin-top: 2rem; 
+}
+
+.main img {
+    width: 709px;
+    height: 506px; 
+}
+
+.content {
+    width: 35%;
+    float: right;
+    padding-top: 30px; 
+    line-height: 1.5;
+    letter-spacing: .275px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button {
+    color:hsl(257, 40%, 49%);
+    background-color: white;
+    padding: 14px 52px; 
+    border: none;
+    border-radius: 32px;
+    font-size: 16px;
+    box-shadow: 2px 2px 8px 0px black;
+}
+
+button:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.socials {
+    padding-right: 22px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 58px; 
+}
+
+.socials li {
+    list-style: none;
+}
+
+.socials i {
+    width: 35px; 
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url("images/bg-mobile.svg");
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    header {
+        width: 100%;
+        text-align: left;
+        padding: 2rem 0 3rem 4rem; 
+    }
+
+    .logo {
+        width: 40%;
+        padding: 0; 
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .main img {
+        width: 85%;
+        height: 50%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    h1 {
+        padding: 0 80px;
+        font-size: 20px;
+    }
+
+    p {
+        padding: 0 60px; 
+    }
+
+    button {
+        padding: 14px 90px; 
+        margin: 2rem; 
+    }
+
+    .socials {
+        justify-content: center;
+    }
+}
